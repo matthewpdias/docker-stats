@@ -1,6 +1,8 @@
 names = `docker stats --no-stream --format "{{.Name}}"`
 
-file = File.open("stats", "w")
+current = Time.now.strftime("%F-%H-%M")
+
+file = File.open("stats/#{current}.csv", "w")
 
 file.puts "Name, Memory Used, CPU Used, Time"
 
