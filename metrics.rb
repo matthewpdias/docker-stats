@@ -18,7 +18,7 @@ end
 #collect statistics from the `docker stats` command and write them
 # => to the open file created above
 while true
-  sleep(1)
+  sleep(2)
   data = `docker stats --no-stream --format "{{.Name}}\t{{.MemPerc}}\t{{.CPUPerc}}"`
   data = data.split("\n")
 

@@ -11,9 +11,9 @@ knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE)
 ```
 
 
-<% csv_list.each do |csv| %>
+<% csv_list.each do |csv, index| %>
 
-#### Plot for trial # (index + 1)
+#### Plot for trial <%= (index + 1) %>
 
   ```{r}
   data <- read.csv("<%=csv%>")

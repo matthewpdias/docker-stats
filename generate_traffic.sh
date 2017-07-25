@@ -2,7 +2,7 @@
 
 source platform.secrets.sh
 
-jobs=(job/sample_pipelines/job/joda-time job/sample_pipelines/job/game-of-life job/sample_pipelines/job/libotrio)
+jobs=(job/sample_pipelines/job/joda-time job/sample_pipelines/job/game-of-life job/sample_pipelines/job/libotrio job/sample_pipelines/job/spring-petclinic)
 MINWAIT=2
 MAXWAIT=5
 
